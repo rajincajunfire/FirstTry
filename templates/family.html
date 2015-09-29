@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<head>
+<title> The Oso Family Profiles</title>
+</head>
+<body>
+	<h1>The Oso Children</h1>
+	<ol>
+		{% for person in familyList %}
+			<li>{{person.first_name}} {{person.last_name}}</li>
+		{% endfor %}

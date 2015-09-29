@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kemi's First WebbApp</title>
+</head>
+<body>
+	<img src={% static 'img/storm.jpg' %}>
+	<h1>Welcome to {{ name }}'s first WebApp</h1>
+
+	<div>
+		<h2>Please Check Out These Links:</h2>
+			<ul>
+			<li>	<a href="{% url 'about' %}">About</a></li>
+			<li> <a href="{% url 'whatever' %}">Whatever</a></li>
+			</ul>
+	</div>
+</body>
+</html>

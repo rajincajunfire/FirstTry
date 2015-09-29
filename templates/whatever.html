@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	WhateverLife
+	</title>
+</head>
+<body>
+	<div>
+	<h1>This is really just a page to mess around</h1>
+	<ol>
+		<li>Beyonce</li>
+		<li>Rihanna</li>
+		<li>Nicki</li>
+	</ol>
+	<ul>
+		<li>BOOP</li>
+		<li>BEEP</li>
+		<li>BAP</li>
+	</ul>
+
+	<form>
+		Username: <input type="text" name="username" value="put yo shit in"><br>
+		Password: <input type="password" name="password"><br><br>
+	
+		Radio: <input type="radio" name="firstoption"><br>
+		Radio2: <input type="radio" name="secondoption"><br><br>
+
+		<input type="submit" value="This is what the button Says">
+
+	</form>
+	</div>
+
+	<div>
+	<h1>THIS WEBSITE CONTAINS INFORMATION ABOUT ALCOHOL</h1>
+	{% if age < 21%}
+		Sorry, you aren't old enough to view this.
+	{% elif age >= 21%}
+		Welcome to the website.
+	{% endif %}
+	</div>
+
+
+</body>	
+
+</html>

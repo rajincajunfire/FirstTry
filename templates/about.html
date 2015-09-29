@@ -1,0 +1,21 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About {{name}}</title>
+</head>
+<body>
+	<div>
+		<h1>Meet {{name}}</h1>
+		<img src={% static 'img/nars.jpg' %}>
+		<p>
+		She is {{age}} years old.<br>
+		Her birthday is on {{birthday}}.<br>
+		She is from {{hometown}}.<br>
+		<br><br>
+		{{ bio }}
+		If you would like to hire her, please email kemi@codeforprogress.org.
+		</p>
+	</div>
+</body>
+</html>
